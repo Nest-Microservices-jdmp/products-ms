@@ -14,7 +14,7 @@ async function bootstrap() {
       },
     },
   );
-  const logger = new Logger('Main');
+  const logger = new Logger('Products-Ms');
 
   app.useGlobalPipes(
     new ValidationPipe({
