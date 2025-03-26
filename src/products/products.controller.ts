@@ -36,7 +36,6 @@ export class ProductsController {
   }
   @MessagePattern({ cmd: 'validate_product' })
   validateProducts(@Payload() ids: number[]) {
-    console.log(ids);
     return this.productsService.validateProducts(ids);
   }
 }
